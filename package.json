@@ -1,13 +1,13 @@
-FROM node:16
-
-WORKDIR /app
-
-# Copy package.json and package-lock.json
-COPY package.json package-lock.json ./
-
-RUN npm install
-
-COPY . .
-
-EXPOSE 3000
-CMD ["npm", "start"]
+{
+  "name": "Jenkins-Project",
+  "version": "1.0.0",
+  "description": "A brief description of your project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}
